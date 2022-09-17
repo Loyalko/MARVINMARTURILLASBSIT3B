@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Activity 2</h1>
+
+<p>Create a JavaScript program that check your Zodiac Sign.</p>
+
+
+<p1 id="birthday" style="color:red"></p1>
+<script>
+ 
+    
+    function zodiac_sign(day, month)
+        {
+            let myBirthday=" ";
+               
+            
+            if (month == "december"){
+                   
+                if (day < 22)
+                myBirthday = "Sagittarius";
+                else
+                myBirthday ="capricorn";
+            }
+                   
+            else if (month == "january"){
+                if (day < 20)
+                myBirthday = "Capricorn";
+                else
+                myBirthday = "aquarius";
+            }
+                   
+            else if (month == "february"){
+                if (day < 19)
+                myBirthday = "Aquarius";
+                else
+                myBirthday = "Pisces";
+            }
+                   
+            else if(month == "march"){
+                if (day < 21)
+                astro_sign = "Pisces";
+                else
+                astro_sign = "aries";
+            }
+            else if (month == "april"){
+                if (day < 20)
+                myBirthday = "Aries";
+                else
+                myBirthday = "taurus";
+            }
+                   
+            else if (month == "may"){
+                if (day < 21)
+                myBirthday = "Taurus";
+                else
+                myBirthday = "gemini";
+            }
+                   
+            else if( month == "june"){
+                if (day < 21)
+                myBirthday = "Gemini";
+                else
+                myBirthday = "cancer";
+            }
+                   
+            else if (month == "july"){
+                if (day < 23)
+                myBirthday = "Cancer";
+                else
+                myBirthday = "leo";
+            }
+                   
+            else if( month == "august"){
+                if (day < 23)
+                myBirthday = "Leo";
+                else
+                myBirthday = "virgo";
+            }
+                   
+            else if (month == "september"){
+                if (day < 23)
+                myBirthday = "Virgo";
+                else
+                myBirthday = "libra";
+            }
+                   
+            else if (month == "october"){
+                if (day < 23)
+                myBirthday = "Libra";
+                else
+                myBirthday = "scorpio";
+            }
+                   
+            else if (month == "november"){
+                if (day < 22)
+                myBirthday = "scorpio";
+                else
+                myBirthday = "sagittarius";
+            }
+                   
+            document.getElementById("birthday").innerHTML = "Your zodiac sign is " + myBirthday;
+        }
+     
+ 
+     
+            let day = 28;
+            let month = "february";
+            zodiac_sign(day, month);
+     
+    </script>
